@@ -56,7 +56,7 @@ summary{
     list-style: none;
 }
 /* 공통 부분 */
-/* 헤더 */
+/* 헤더 시작 */
 header{
     /* position: fixed; */
     top:0; left:0;
@@ -128,11 +128,11 @@ header > .header_area > h1 > a{
 .gnb_depth .submenu_list li:last-child a{
     padding-right: 0;
 }
-/* 헤더 */
+/* 헤더  끝*/
 #container{ 
     padding-bottom: 70px;
 }
-/* About us */
+/* About us(AboutUs.html) 시작*/
 .top_card{
     width: 100%;
     height: 200px;
@@ -210,8 +210,8 @@ details .show_history{
     text-align: center;
     margin-top: 14px;
 }
-/* About us */
-/* 오시는 길 */
+/* About us(AboutUs.html) 끝 */
+/* 오시는 길(mapRoute.html) 시작 */
 .mapBox{
     width: 1024px;
     border-top: 3px solid black;
@@ -327,8 +327,8 @@ section .busContent{
     font-size: 14px;
     line-height: 18px;
 }
-/* 오시는 길 */
-/* 동물가족소개 */
+/* 오시는 길(mapRoute.html) 끝 */
+/* 동물가족소개(animalIntroduce.html) 시작 */
 #container .animalIntTitle{
     background: url(../images/img_subvisual04.jpg) no-repeat;
     background-size: cover;
@@ -504,8 +504,7 @@ ul.ani_category li{
     cursor:pointer 
 }
 
-
-.test{
+.aniInfo_list > li{
     width: 1000px;
     height: 550px;
     margin-top: 100px;
@@ -516,27 +515,37 @@ ul.ani_category li{
     position:absolute;
     border: 1px solid #8a8a8a;
 }
-.test > div{
+.aniInfo_list > li > div{
     float: left;
 }
-.test .imgBox{
+.aniInfo_list > li .imgBox{
     width: 800px;
+    margin: 0;
     height: inherit;
 }
-.test .imgBox img{
-    padding: 40px 0;
-    padding-left: 100px;
+.aniInfo_list > li .imgBox img{
+    width: 600px;
+    padding: 40px;
+    padding-left: 120px;
 }
-.test .cancel{
-    width: 180px;
+.aniInfo_list .cancel{
     margin-top: 30px;
+    width: 160px;
 }
-.test .cancel a img{
+.aniInfo_list .cancel div img{
     width: 80px;
     height: 80px;
     padding-left: 80px;
 }
-/* .test .info{
+
+.aniInfo_list .aniInfo1{ display: none; }
+.aniInfo_list .aniInfo2{ display: none; }
+.aniInfo_list .aniInfo3{ display: none; }
+.aniInfo_list .aniInfo4{ display: none; }
+.aniInfo_list .aniInfo5{ display: none; }
+.aniInfo_list .aniInfo6{ display: none; }
+
+/* .aniInfo_list .info{
     margin: 50px;
     margin-left: 12px;
     height: 500px;
@@ -593,8 +602,8 @@ ul.ani_category li{
     border: solid 2px #ab51fe;
     color: #ab51fe;
 }
-/* 동물가족소개 */
-/* 푸터 */
+/* 동물가족소개(animalIntroduce.hmtl) */
+/* 푸터 시작 */
 footer{
     /* margin-top: 100px; */
     font-family: "GmarketSansMedium";   
@@ -670,6 +679,18 @@ footer > .foot_area > .snslink > li+li+li > a{
 footer{
     background-color: #333;
 }
-/* 푸터 */
-/* <a href="https://www.flaticon.com/kr/free-icons/-" title="애완 동물 가게 아이콘">애완 동물 가게 아이콘  제작자: Nikita Golubev - Flaticon</a> */
-/* <a href="https://www.flaticon.com/kr/free-icons/" title="닫기 아이콘">닫기 아이콘  제작자: Freepik - Flaticon</a> */
+/* 푸터 끝*/
+/* 테블릿 반응형 */
+@media screen and (max-width:1065px) and (min-width:801px){
+    .box_inner{ width:100%; }
+    header .header_area h1{ padding-left: 20px; }
+    .header_cont{ float:right; width:60%; padding-right: 20px; }
+    .header_cont .gnb li a{ padding: 26px 25px; }
+    .gnb_depth .submenu_list{ width:100%; padding-left: 52%;}
+    .gnb_depth .submenu_list a{ padding:20px; }
+
+}
+/* 테블릿 반응형 */
+/* 모바일 반응형 */
+
+/* 모바일 반응형 */
