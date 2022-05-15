@@ -14,7 +14,13 @@
         <!-- header 시작 -->
         <header>
             <div class="header_area box_inner clear">
-                <h1><a href="./index.html">Tourist in Tour</a></h1>
+                <h1><a href="./index.html">전주동물원</a></h1>
+                <p class="openMOgnb">
+                    <a href="#">
+                        <b class="hdd">메뉴열기</b>
+                        <span></span><span></span><span></span>
+                    </a>
+                </p>
                 <div class="header_cont">
                     <ul class="util clear">
                         <li><a href="https://www.jeonju.go.kr/index.9is?contentUid=9be517a74fa674f8014faad5c63302bd&returnUrl=http%3A%2F%2Fdevzoo.jeonju.go.kr%2Fplanweb%2Fboard%2Fwrite.9is%3Fpage%3D1%26boardUid%3D9be517a8725f7e720172724edb2671f6%26contentUid%3D9be517a8725f7e720172724fa4a17222%26layoutUid%3D%26searchType%3D%26keyword%3D%26categoryUid1%3D%26categoryUid2%3D%26cateogryUid3%3D">로그인</a></li>
@@ -23,36 +29,36 @@
                     <nav>
                         <ul class="gnb clear">
                             <li>
-                                <a href="#" class="openAll1">동물원 소개</a>
+                                <a href="./AboutUs.html" class="openAll openAll1">동물원 소개</a>
                                 <div class="gnb_depth gnb_depth2_1">
-                                    <ul class="submenu_list">
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">오시는 길</a></li>
-                                        <li><a href="#">동물가족 소개</a></li>
+                                    <ul class="submenu_list submenu_list1">
+                                        <li><a href="./AboutUs.html">About us</a></li>
+                                        <li><a href="./mapRoute.html">오시는 길</a></li>
+                                        <li><a href="./animalIntroduce.html">동물가족 소개</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
-                                <a href="#" class="openAll2">이용정보</a>
+                                <a href="#" class="openAll openAll2">이용정보</a>
                                 <div class="gnb_depth gnb_depth2_2">
-                                    <ul class="submenu_list">
+                                    <ul class="submenu_list submenu_list2">
                                         <li><a href="#">이용안내</a></li>
                                         <li><a href="#">전시안내</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
-                                <a href="#" class="openAll3">e-tiket 구매</a>
+                                <a href="#" class="openAll openAll3">e-tiket 구매</a>
                                 <div class="gnb_depth gnb_depth2_3">
-                                    <ul class="submenu_list">
+                                    <ul class="submenu_list submenu_list3">
                                         <li><a href="#">구매하기</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
-                                <a href="#" class="openAll4">동물원 소식</a>
+                                <a href="#" class="openAll openAll4">동물원 소식</a>
                                 <div class="gnb_depth gnb_depth2_4">
-                                    <ul class="submenu_list">
+                                    <ul class="submenu_list submenu_list4">
                                         <li><a href="#">공지사항</a></li>
                                         <li><a href="#">동물원 일상</a></li>
                                         <li><a href="#">자원봉사 신청</a></li>
@@ -62,6 +68,7 @@
                             </li>
                         </ul>
                     </nav>
+                    <p class="closePop"><a href="#">닫기</a></p>
                 </div>
             </div>
         </header>
@@ -88,7 +95,7 @@
                 <h3 class="title">주차장</h3>
                 <div class="imgBox">
                     <div class="parkImg">
-                        <img src="./images/img_map_car.jpg" alt="" style="width: 1024px;">
+                        <img src="./images/img_map_car.jpg">
                     </div>
                 </div>
                 <ul style="list-style: circle;">
@@ -97,7 +104,7 @@
                     </li>
                 </ul>
                 <div class="carParkCost">
-                    <img src="./images/img_car_park_cost.png" style="width: 1024px;" alt="">
+                    <img src="./images/img_car_park_cost.png">
                 </div>
                 <ul style="list-style: circle;">
                     <li style="list-style: circle;">
@@ -123,10 +130,10 @@
                         </div>
                     </div>
                     <div class="bus_route bus1000_route">
-                        <img src="./images/img_course1000.jpg" alt="">
+                        <img src="./images/img_course1000.jpg">
                     </div>
                     <div class="bus_time bus1000_time">
-                        <img src="./images/img_bus1000_time.png" alt="">
+                        <img src="./images/img_bus1000_time.png">
                     </div>
                 </div>
                 <div class="bus_area">
@@ -143,10 +150,10 @@
                         </div>
                     </div>
                     <div class="bus_route bus165_route">
-                        <img src="./images/img_course165.jpg" alt="">
+                        <img src="./images/img_course165.jpg">
                     </div>
                     <div class="bus_time bus165_time">
-                        <img src="./images/img_bus165_time.png" alt="">
+                        <img src="./images/img_bus165_time.png">
                     </div>
                 </div>
                 <p class="busContent">
@@ -188,5 +195,6 @@
         <!-- footer 끝 -->
     </div>
     <!-- wrap 끝 -->
+    <script src="./JS/mauseEvent.js"></script>
 </body>
 </html>
